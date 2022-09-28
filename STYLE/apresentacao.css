@@ -1,0 +1,155 @@
+/* grid container */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    height: 100vh;
+    margin-top: 25px;
+}
+
+/* texto da apresentação */
+.texto-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+
+}
+
+.descricao {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.meu-nome {
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: yellow;
+}
+.meu-nome::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin: 20px;
+}
+.btn-redeSocial {
+    width: 100px;
+    transition: .2s;
+    padding: 10px;
+}
+.btn-redeSocial:hover {
+    width: 105px;
+}
+.cv-download {
+    width: auto;
+    background-color: rgb(51, 51, 51);
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    padding: 10px;
+    margin-top: 5px;
+}
+.cv-download:hover {
+    letter-spacing: 2px;
+    cursor: pointer;
+    border:2px solid  black;
+    border-radius: 15px;
+}
+/* avatar */
+.avatar-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar_img--apresentacao {
+    width: 300px;
+}
+@keyframes desenhoAnimacao {
+    from {
+        top:-15px;
+    }
+    to {
+        top: 25px;
+    }
+}
+.avatar_img--apresentacao {
+    position:relative;
+    animation: desenhoAnimacao 2s infinite alternate-reverse linear;
+}
+@media (max-width:750px){
+    .apresentacao {
+        flex-direction: column;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .meu-nome {
+        font-size: 70px;
+    }
+    .texto-apresentacao {
+        margin-top: 0;
+    }
+    .btn-redeSocial {
+        width: 80px;
+    }
+    .cv-download {
+        font-size: 15px
+    }
+    .descricao {
+        font-size: 30px;
+    }
+    .avatar_img--apresentacao{
+        width: 150px;
+    }
+}
+@media (max-width:460px){
+    .meu-nome {
+        font-size: 50px;
+    }
+    .descricao {
+        font-size: 20px;
+    }
+    .botao-linkedin{
+        font-size: 25px;
+    }
+
+}
+@media(max-width:400px){
+    .apresentacao{
+        height: 100vh;
+    }
+}
+@media (max-width:370px){
+    .avatar_img--apresentacao{ 
+    width: 150px;
+    margin-top: 25px;
+    }
+
+}

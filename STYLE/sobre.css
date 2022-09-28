@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.sobre {
+    display: flex;
+    padding: 25px;
+    flex: auto; 
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; 
+}
+.texto-sobre {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    color: white;
+    font-family: 'courgette', cursive;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titulo-sobre {
+    display: flex;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: rgb(167, 167, 167);
+   
+}
+#titulo-sobre{
+    width: 10px;
+}
+
+.avatar-sobre {
+    width: 280px;
+}
+@media (max-width:750px){
+   .titulo-sobre {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 150px;
+   }
+   .avatar-sobre {
+    width: 230px;
+   }
+}
+@media(max-width:600px){
+    .titulo-sobre{
+    margin-top: 100px;
+    }
+    .texto-sobre{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:320px){
+    .titulo-sobre {
+        text-align: center;
+        font-size: 30px; 
+    }
+    .texto{
+        font-size: 18px;
+        text-align: center;
+    }
+}

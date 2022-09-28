@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | ON.</title>
+    <link rel="icon" href="/IMG/lgt.ico" type="image/x-icon/">
+    <link rel="stylesheet" href="/STYLE/style.css">
+    <link rel="stylesheet" href="/STYLE/header.css">
+    <link rel="stylesheet" href="/STYLE/apresentacao.css">
+    <link rel="stylesheet" href="/STYLE/sobre.css">
+    <link rel="stylesheet" href="/STYLE/tecnologias.css">
+    <link rel="stylesheet" href="/STYLE/projetos.css">
+    <link rel="stylesheet" href="/STYLE/contato.css">
+    <link rel="stylesheet" href="/STYLE/footer.css">
+</head>
+<body onload="typeWriter(fName);">
+    <div class="container" id="inicio">
+    <!-- MENU MOBILE -->
+        <input
+            id="close-menu"
+            class="close-menu"
+            type="checkbox"
+            aria-label="close-menu"
+            role="button"/>
+        <label
+            class="close-menu-label"
+            for="close-menu"
+            title="close menu">
+        </label>
+    <!-- NAVEGAÇÃO -->
+        <header class="header" onclick="getElementById('close-menu').checked=false;">
+            <a href="./index.html">
+             <img src="/IMG/logo.png" alt="logo-header" class="logo-nav">
+            </a>
+            <div class="header-btn">
+                <a href="#sobre"><button class="nav-btn">Sobre</button></a>
+                <a href="#tecnologias"><button class="nav-btn">Tecnologias</button></a>
+                <a href="#projetos"><button class="nav-btn">Projetos</button></a>
+                <a href="#contato"><button class="nav-btn">Contato</button></a>
+            </div>
+        </header>
+    <!-- APRESENTAÇÃO -->
+        <section class="apresentacao" id="apresentacao">
+            <div class="texto-apresentacao" id="texto-apresentacao">
+                <p class="descricao">oi,eu sou </p>
+                <span style="display: inline" class="meu-nome">
+                Otavio Neto</span>
+                <p class="descricao" id="descricao-dev">Desenvolvedor Front-end</p>
+                <div class="box-btn">
+                    <a href="https://www.linkedin.com/in/otavioneto21/" target="_blank"><img src="/IMG/linkedin.png" class="btn-redeSocial" alt="icon-linkedin"></img></a>
+                    <a href="https://www.instagram.com/otaviiioneto" target="_blank"><img src="/IMG/instagram.png" class="btn-redeSocial" alt="icon-instagram"></img></a>
+                    <a href="https://github.com/otaviofneto" target="_blank"><img src="/IMG/github.png" class="btn-redeSocial" alt="icon-github"></img></a>
+                </div>
+                <a href="/otneto2022.pdf" download="curriculo" target="_blank"><button class="cv-download">Download do curriculo</button></a>
+            </div>
+            <div class="avatar-apresentacao" id="avatar-apresentacao">
+                <img src="/IMG/avatar.png" alt="avatar" class="avatar_img--apresentacao">
+            </div>
+        </section>
+
+    <!-- SESSÃO SOBRE MIM -->
+        <section class="sobre" id="sobre">
+            <p class="titulo-sobre">Sobre mim</p>
+            <div class="texto-sobre">
+                <img src="/IMG/avatar-sobre.png" class="avatar-sobre" alt="img-avatar-sobre">
+                <p class="texto"> Meu nome é Otavio, tenho 27 anos!<br>
+                    Estou cursando sistema de informação pela ANHEMBI MORUMBI.<br>
+                    Um apaixonado por tecnologia que decidiu trilhar o caminho da programação, motivado à resolução de 
+                    desafios e problemas!<br>
+                    Meu objetivo profissional é ter sucesso na área de desenvolvimento, 
+                    podendo construir aplicações que facilite nossas tarefas com a tecnologia!
+                </p>  
+            </div>   
+        </section>
+
+    <!-- SESSÃO TECNOLOGIA -->
+        <section class="tecnologias" id="tecnologias">
+            <p class="titulo-sec" >Tecnologias</p>
+            <div class="tec-box" id="tecBox">
+                    <div class="cards-tecnologia" id="card-html">
+                        <img src="/IMG/html.png" alt="img-html" class="img-card">
+                        <h2 class="titulo-tec">HTML</h2>
+                        <p class="tec-descricao">Linguagem de marcação utilizada na construção de páginas na web.</p>
+                    </div>
+                    <div class="cards-tecnologia" id="card-css">
+                        <img src="/IMG/css.png" alt="img-css" class="img-card">
+                        <h2 class="titulo-tec">CSS</h2>
+                        <p class="tec-descricao">Mecanismo para adicionar estilo a um documento web.</p>
+                    </div>
+                    <div class="cards-tecnologia" id="card-js">
+                        <img src="/IMG/js.png" alt="img-js" class="img-card">
+                        <h2 class="titulo-tec">JavaScript</h2>
+                        <p class="tec-descricao">Linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web. </p>
+                    </div>
+                    <div class="cards-tecnologia" id="cards">
+                        <img src="/IMG/bootstrap.png" alt="img-js" class="img-card">
+                        <h1 class="titulo-tec">Bootstrap</h1>
+                        <p class="tec-descricao">Um framework CSS utilizado para estilizar páginas e adicionar funcionalidades. Indo além do visual.</p>
+                    </div>
+                    <div class="cards-tecnologia" id="cards">
+                        <img src="/IMG/sass.png" alt="img-js" class="img-card">
+                        <h1 class="titulo-tec">Sass</h1>
+                        <p class="tec-descricao">É uma linguagem de extensão do CSS, que nos permite fazer coisas muito além das que estamos acostumados</p>
+                    </div>
+                    <div class="cards-tecnologia" id="cards">
+                        <img src="/IMG/physics.png" alt="img-js" class="img-card">
+                        <h1 class="titulo-tec">React</h1>
+                        <p class="tec-descricao">Uma biblioteca JavaScript para a criação de interfaces de usuário</p>
+                    </div>
+                    <div class="cards-tecnologia" id="cards">
+                        <img src="/IMG/nodejs.png" alt="img-js" class="img-card">
+                        <h1 class="titulo-tec">NodeJs</h1>
+                        <p class="tec-descricao">É basicamente um ambiente de execução Javascript server-side. (Lado do Servidor) </p>
+                    </div>
+                    
+            </div>
+        </section>
+    <!-- SESSÃO PROJETOS -->
+        <section class="projetos" id="projetos">
+            <p class="titulo-proj">Projetos</p>
+            <div class="box-projetos">
+                <div class="cards-projetos">
+                    <img src="/IMG/breve.jpg" alt="img-breve" class="img-card">
+                    <h2 class="titulo-tec">BREVE</h2>
+                </div>
+                <div class="cards-projetos">
+                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
+                    <h2 class="titulo-tec">BREVE</h2>
+                </div>
+                <!-- <div class="cards-projetos">
+                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
+                    <h2 class="titulo-tec">BREVE</h2>
+                </div>
+                <div class="cards-projetos">
+                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
+                    <h2 class="titulo-tec">BREVE</h2>
+                </div> -->
+            </div>
+        </section>
+    <!-- sSESSÃO CONTATO -->
+        <section class="contato" id="contato">
+            <div class="box-contato">
+                <p class="titulo-cont">Contato</p>
+                <form class="box-form" action="https://formsubmit.co/otaviof.neto@outlook.com" method="post">
+                    <label class="form-label">Nome completo</label>
+                    <input class="form-nome" type="text" name="name" required>
+                    <label class="form-label">Email</label>
+                    <input class="form-email" type="email" name="email" required>
+                    <label class="form-label">Digite sua mensagem</label>
+                    <textarea class="texto-contato"></textarea>
+                    <button class="btn-contato" type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="info-footer"> by on. soluções</p>
+            <a href="#inicio"><img src="/IMG/lgt.png" alt="logo-footer" class="logo-footer"></a> 
+            <p class="info-footer">Todos os direitos reservados. 2022</p>
+        </footer>
+    </div>
+    <script src="/JS/maquina_escrever.js"></script>
+</body>
+</html>

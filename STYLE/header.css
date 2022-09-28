@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.logo-nav {
+    width: 180px;
+}
+.header {
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 8px 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-btn {
+    display: flex;
+    gap: 15px;
+}
+.nav-btn {
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Fredoka One', cursive;
+}
+#close-menu {
+    display: none;
+}
+.nav-btn:hover {
+    border-bottom: 2px solid black;
+    letter-spacing: 2px;
+}
+@media(max-width:600px) {
+    .header{
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        top: -100vh;
+        transition: .3s;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .close-menu-label::after {
+        content:'≡';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background: #292929;
+        color: yellow;
+        font-size: 2rem;
+        line-height:2rem;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* ✕ */
+    .close-menu:checked~.header {
+        top: 0;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '✕';
+    }
+    .logo-nav {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+    .nav-btn {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    #close-menu {
+        display: none;
+    }
+}
+@media(max-width:350px){
+    .nav-btn {
+        font-size: 20px;
+    }
+}

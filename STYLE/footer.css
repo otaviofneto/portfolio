@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #292929;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.logo-footer {
+    width: 100px;
+}
+.info-footer {
+    font-size: 15px;
+}
+@media (max-width:750px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+@media(max-width:600px){
+    .logo-footer{
+        width: 60px;
+    }
+    .info-footer{
+        font-size: 12px;
+    }
+
+}
