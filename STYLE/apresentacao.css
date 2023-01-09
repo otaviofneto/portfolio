@@ -1,7 +1,7 @@
-/* grid container */
+
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
+/* CONTAINER APRESENTACAO */
 .apresentacao {
     display: flex;
     justify-content: space-around;
@@ -9,9 +9,8 @@
     padding: 5px;
     gap: 5px;
     height: 100vh;
-    margin-top: 25px;
+    margin-top: 40px;    
 }
-
 /* texto da apresentação */
 .texto-apresentacao {
     display: flex;
@@ -19,7 +18,6 @@
     justify-content: center;
     color: white;
     align-items: center;
-
 }
 
 .descricao {
@@ -62,7 +60,7 @@
     padding: 10px;
 }
 .btn-redeSocial:hover {
-    width: 105px;
+    opacity: 50%;
 }
 .cv-download {
     width: auto;
@@ -101,20 +99,26 @@
 .avatar_img--apresentacao {
     position:relative;
     animation: desenhoAnimacao 2s infinite alternate-reverse linear;
+
 }
-@media (max-width:750px){
+/* Responsivo-landscape */
+@media (max-width: 1024px) and (orientation: landscape){
+    .apresentacao {
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+}
+ /* RESPONSIVIDADE */
+@media (max-width:768px) {
     .apresentacao {
         flex-direction: column;
         display: flex;    
         justify-content: center;
         align-items: center;
-        
+        margin-top: 100px;
     }
     .meu-nome {
         font-size: 70px;
-    }
-    .texto-apresentacao {
-        margin-top: 0;
     }
     .btn-redeSocial {
         width: 80px;
@@ -130,6 +134,9 @@
     }
 }
 @media (max-width:460px){
+    .apresentacao {
+        margin-bottom: 20px;
+    }
     .meu-nome {
         font-size: 50px;
     }

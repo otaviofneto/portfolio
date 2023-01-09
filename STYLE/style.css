@@ -10,9 +10,11 @@
     flex-direction: column;
     background-color: #222;
 }
+/* RESPONSIVIDADE */
 @media (max-width:750px) {
     .container {
         min-width: auto;
         font-size: auto;
     }
 }
+

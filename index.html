@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | ON.</title>
+    <title>ON. | Portfólio</title>
     <link rel="icon" href="/IMG/lgt.ico" type="image/x-icon/">
     <link rel="stylesheet" href="/STYLE/style.css">
     <link rel="stylesheet" href="/STYLE/header.css">
@@ -29,7 +29,8 @@
             for="close-menu"
             title="close menu">
         </label>
-    <!-- NAVEGAÇÃO -->
+    
+        <!-- NAVEGAÇÃO -->
         <header class="header" onclick="getElementById('close-menu').checked=false;">
             <a href="./index.html">
              <img src="/IMG/logo.png" alt="logo-header" class="logo-nav">
@@ -41,10 +42,11 @@
                 <a href="#contato"><button class="nav-btn">Contato</button></a>
             </div>
         </header>
-    <!-- APRESENTAÇÃO -->
+    
+        <!-- APRESENTAÇÃO -->
         <section class="apresentacao" id="apresentacao">
             <div class="texto-apresentacao" id="texto-apresentacao">
-                <p class="descricao">oi,eu sou </p>
+                <p class="descricao">Oi,eu sou </p>
                 <span style="display: inline" class="meu-nome">
                 Otavio Neto</span>
                 <p class="descricao" id="descricao-dev">Desenvolvedor Front-end</p>
@@ -80,7 +82,7 @@
             <p class="titulo-sec" >Tecnologias</p>
             <div class="tec-box" id="tecBox">
                     <div class="cards-tecnologia" id="card-html">
-                        <img src="/IMG/html.png" alt="img-html" class="img-card">
+                        <img src="/IMG/html.png"  alt="img-html" class="img-card">
                         <h2 class="titulo-tec">HTML</h2>
                         <p class="tec-descricao">Linguagem de marcação utilizada na construção de páginas na web.</p>
                     </div>
@@ -95,51 +97,53 @@
                         <p class="tec-descricao">Linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web. </p>
                     </div>
                     <div class="cards-tecnologia" id="cards">
-                        <img src="/IMG/bootstrap.png" alt="img-js" class="img-card">
+                        <img src="/IMG/bootstrap.png" alt="img-bootstrap" class="img-card">
                         <h1 class="titulo-tec">Bootstrap</h1>
                         <p class="tec-descricao">Um framework CSS utilizado para estilizar páginas e adicionar funcionalidades. Indo além do visual.</p>
                     </div>
                     <div class="cards-tecnologia" id="cards">
-                        <img src="/IMG/sass.png" alt="img-js" class="img-card">
+                        <img src="/IMG/sass.png" alt="img-sass" class="img-card">
                         <h1 class="titulo-tec">Sass</h1>
                         <p class="tec-descricao">É uma linguagem de extensão do CSS, que nos permite fazer coisas muito além das que estamos acostumados</p>
                     </div>
                     <div class="cards-tecnologia" id="cards">
-                        <img src="/IMG/physics.png" alt="img-js" class="img-card">
+                        <img src="/IMG/react.png" alt="img-react" class="img-card">
                         <h1 class="titulo-tec">React</h1>
                         <p class="tec-descricao">Uma biblioteca JavaScript para a criação de interfaces de usuário</p>
                     </div>
                     <div class="cards-tecnologia" id="cards">
-                        <img src="/IMG/nodejs.png" alt="img-js" class="img-card">
+                        <img src="/IMG/nodejs.png" alt="img-node" class="img-card">
                         <h1 class="titulo-tec">NodeJs</h1>
                         <p class="tec-descricao">É basicamente um ambiente de execução Javascript server-side. (Lado do Servidor) </p>
                     </div>
                     
             </div>
         </section>
-    <!-- SESSÃO PROJETOS -->
+   
+        <!-- SESSÃO PROJETOS -->
         <section class="projetos" id="projetos">
             <p class="titulo-proj">Projetos</p>
             <div class="box-projetos">
+                <div class="cards-projetos">
+                    <a href="./todolist/tarefas-index.html"><img src="/IMG/todolist.png" alt="img-TODOLIST" class="img-card"></a>
+                    <h2 class="titulo-tec">LISTA DE TAREFAS</h2>
+                </div>
                 <div class="cards-projetos">
                     <img src="/IMG/breve.jpg" alt="img-breve" class="img-card">
                     <h2 class="titulo-tec">BREVE</h2>
                 </div>
                 <div class="cards-projetos">
-                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
-                    <h2 class="titulo-tec">BREVE</h2>
-                </div>
-                <!-- <div class="cards-projetos">
-                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
+                    <img src="/IMG/breve.jpg" alt="img-breve" class="img-card">
                     <h2 class="titulo-tec">BREVE</h2>
                 </div>
                 <div class="cards-projetos">
-                    <img src="/IMG/breve.jpg" alt="img-js" class="img-card">
+                    <img src="/IMG/breve.jpg" alt="img-breve" class="img-card">
                     <h2 class="titulo-tec">BREVE</h2>
-                </div> -->
+                </div> 
             </div>
         </section>
-    <!-- sSESSÃO CONTATO -->
+    
+        <!-- SESSÃO CONTATO -->
         <section class="contato" id="contato">
             <div class="box-contato">
                 <p class="titulo-cont">Contato</p>
@@ -154,6 +158,8 @@
                 </form>
             </div>
         </section>
+    
+        <!-- RODAPE -->    
         <footer class="footer">
             <p class="info-footer"> by on. soluções</p>
             <a href="#inicio"><img src="/IMG/lgt.png" alt="logo-footer" class="logo-footer"></a> 
